@@ -1,3 +1,6 @@
+### Tools
+ReactJs & TypeScript
+
 ### Demo
 https://safarish.netlify.app/
 
