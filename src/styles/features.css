@@ -1,0 +1,16 @@
+.cards {
+  transition: all 350ms;
+}
+
+.cards:hover {
+  background-color: #1a3660;
+}
+
+.btns > .btn {
+  transition: all 350ms;
+}
+
+.btns:hover > .btn {
+  background-color: #4dbbbd;
+  color: white;
+}
