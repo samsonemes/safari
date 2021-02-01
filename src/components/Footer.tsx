@@ -58,7 +58,7 @@ export const Footer: React.FC<Props> = () => {
       </div>
       {/** official page */}
       <h3 className="text-gray-500 px-6 mt-3 text-center font-semibold text-sm">
-        official page{" "}
+        official website{" "}
         <a className="text-white" href="https://safarishare.co">
           www.safarishare.co
         </a>
@@ -74,10 +74,9 @@ export const Footer: React.FC<Props> = () => {
         </div>
 
         <div className="sm:mt-12 md:mt-0">
-          <h4 className="text-gray-500">
-            re-created by{" "}
+          <h4>
             <a className="text-white" href="http://www.samsonemes.me">
-              samsonemes
+              @samsonemes
             </a>
           </h4>
         </div>

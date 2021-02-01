@@ -3,7 +3,7 @@ import * as React from "react";
 interface Props {}
 export const HowItWorks: React.FC<Props> = () => {
   return (
-    <div className="bg-gray-100 mt-3 text-center">
+    <div className="bg-gray-100 py-16 text-center">
       <h2 style={{ color: "#1a3660" }} className="text-3xl font-bold py-16">
         How It Works
       </h2>

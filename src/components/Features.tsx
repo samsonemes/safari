@@ -19,7 +19,7 @@ export const Features: React.FC<Props> = () => {
         connecting you with other travelers taking the same route
       </p>
 
-      <div className="mt-32 md:flex justify-around m-16">
+      <div className="mt-32 md:flex justify-around m-16 mb-20">
         <div className="cards py-8 px-8 hover:text-white rounded-3xl mr-3">
           <div className="flex justify-center mb-4">
             <span>

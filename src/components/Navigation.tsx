@@ -18,7 +18,7 @@ export const Navigation: React.FC<Props> = () => {
   const menuTransition = useTransition(showMenu, null, {
     from: { opacity: 0, transform: "translateX(-100%)" },
     enter: { opacity: 1, transform: "translateX(0%)" },
-    leave: { opacity: 0, transform: "translateX(100%)" },
+    leave: { opacity: 0, transform: "translateX(-100%)" },
   });
 
   //screen
@@ -45,7 +45,10 @@ export const Navigation: React.FC<Props> = () => {
   );
 
   const mobile = (
-    <div className="sm:block md:hidden" onClick={() => setShowMenu(!showMenu)}>
+    <div
+      className="sm:block md:hidden z-20"
+      onClick={() => setShowMenu(!showMenu)}
+    >
       <div className="py-2 px-4">
         <span>
           <FontAwesomeIcon size="lg" icon={faBars} />
@@ -55,7 +58,7 @@ export const Navigation: React.FC<Props> = () => {
   );
   return (
     <React.Fragment>
-      <header className="w-full">
+      <header className="w-full fixed z-10">
         <div
           style={{ backgroundColor: "#1a3660" }}
           className="text-white w-full flex justify-between py-6"
@@ -86,7 +89,7 @@ export const Navigation: React.FC<Props> = () => {
               <animated.div
                 style={props}
                 key={key}
-                className="fixed top-0 left-0 w-2/3 h-full bg-white text-black"
+                className="fixed z-20 shadow-lg top-0 left-0 w-2/3 h-full bg-white text-black"
               >
                 <ul className="px-8 mt-24">
                   <li className="mr-8 mt-6 text-sm cursor-pointer hover:text-blue-400">
